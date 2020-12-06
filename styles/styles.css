@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 30px 0px 50px rgba(0, 0, 0, 0.2),
+    -30px 0px 50px rgba(0, 0, 0, 0.2);
+}
+img {
+  width: 100%;
+}
+main .landing {
+  background-color: #fff;
+}
+.landing-text {
+  display: flex;
+  flex: 1;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.landing h1 {
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  word-spacing: -10px;
+  margin: 0 0.5em;
+}
+.landing p {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgba(0, 0, 0, 0.705);
+  margin: 0 0.5em;
+}
+.landing .landing-text a {
+  border: 1px #dadada solid;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1em;
+  border-radius: 50px;
+}
+.landing .landing-img {
+  flex: 1.5;
+  height: 50vh;
+  background-color: rgb(0, 0, 0);
+  background: url("https://source.unsplash.com/De8wMYoSSBc");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.gallery .header {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.74);
+}
+.gallery .header h2 {
+  color: #fefefe;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border-left: 2px dotted #fff;
+  border-right: 2px dotted #fff;
+  display: inline-block;
+  padding: 0 1rem;
+}
+.caption {
+  text-align: center;
+  padding: 3rem;
+}
+.caption h3 {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1em;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+footer h3 {
+  font-size: 3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0.5em 0;
+}
+footer p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 501px) {
+  .landing {
+    display: flex;
+    height: 100%;
+  }
+  .landing .landing-text,
+  .landing .landing-img {
+    height: 100vh;
+  }
+}
+@media (min-width: 700px) {
+  .landing .landing-text .btn {
+    padding: 1rem 3rem;
+  }
+  .landing-text h1 {
+    letter-spacing: 5px;
+  }
+}
